@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        main { 
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+            
+        article > aside {
+            background-color: rgb(144, 143, 143);
+        }
+
+        nav {
+            background-color: rgb(88, 87, 87);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.444);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+           <a href="#">link</a>
+           <a href="#">link</a>
+           <a href="#">link</a>
+           <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>esportes política tecnologia </p>          
+         </section>
+         <section id="notícias">
+            <article>
+                <h2>A história dos esportes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis quidem ullam non ducimus aut iusto autem magnam, voluptate doloribus! Neque atque id tenetur, ullam itaque minus et maiores obcaecati.</p>
+            <aside>
+                <p>Artigo escrito por israel moreira </p>
+            </aside>
+            </article>
+            <article>
+                <h2>Como foi o começo da política</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora temporibus totam voluptatibus, amet placeat et similique ea corporis, quae fugit nobis doloribus optio itaque laudantium atque expedita quam modi aspernatur.</p>
+                <aside>Artigo escrito por matheus lopes </aside>
+            </article>
+         </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por joão vitor</p>
+    </footer>
+</body>
+</html>
