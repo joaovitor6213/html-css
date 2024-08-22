@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible box</title>
+    <style>
+
+        /* flex-direction=
+           flex-wrap=
+           flex-flow
+
+            nowrap = e o elemnto nao corta para baixo
+            wrap = e o elemento corta para baixo
+            wrap-reverse = o elemento cot=rtar para cima
+
+        */
+
+
+
+        div.conteiner {
+            background-color: lightgreen;
+            display: flex;
+
+            flex-flow: row-reverse nowrap;
+            justify-items: center;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exenplo de Bloco A</div>
+        <div class="item">Exenplo de Bloco B</div>
+        <div class="item">Exenplo de Bloco C</div>
+        <div class="item">Exenplo de Bloco D</div>
+        <div class="item">Exenplo de Bloco E</div>
+        <div class="item">Exenplo de Bloco F</div>
+        <div class="item">Exenplo de Bloco G</div>
+    </div>
+</body>
+</html>
